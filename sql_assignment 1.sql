@@ -1,9 +1,5 @@
-show databases;
-use sakila;
-select * from film;
-select * from category;
-select * from film_list;
 
+-- Question 1
 select film_id,title
 from film
 where rating = 'PG-13'
@@ -11,6 +7,8 @@ and film_id in (select film_id
 from film_category where 
 category_id in(select category_id
 from category where category.name = 'Comedy'));
+
+--Question 2
 
 SELECT 
     fl.title, COUNT(fl.title), category
@@ -25,6 +23,8 @@ WHERE
 GROUP BY title
 ORDER BY COUNT(fl.title) DESC
 LIMIT 3;
+
+--Question 3
 
 SELECT 
     *
@@ -44,8 +44,9 @@ WHERE
                 AND r.inventory_id = i.inventory_id
         GROUP BY r.customer_id);
         
-
-    SELECT 
+ --Question 4
+        
+  SELECT 
     *
 FROM
     customer_list
@@ -63,8 +64,9 @@ WHERE
         and fa.actor_id = a.actor_id
         and a.first_name = 'NICK'
         and a.last_name = 'WAHLBERG');
-        
-        
+ 
+ --Question 5
+     
         SELECT 
     a.first_name,
     a.last_name,
