@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    
+}
+h1{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+ul {
+  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+        li {
+float: right;
+font-size: larger;
+}
+        li a {
+margin-top: 0;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+ }
+        li a:hover:not(.active) {
+ background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+html, body, div,img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+img{
+    width:320px;
+    height: 240px;
+}
+body {
+    line-height: 1;
+        
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px;
+    justify-content: space-evenly;
+    margin:0 20% 0;
+}
+.item{
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px){
+    li{
+        float: none;
+        width:100%;
+    }
+}

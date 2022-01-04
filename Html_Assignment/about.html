@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Page</title>
+        <style>
+            body{
+            margin:0;
+            background-position: center;
+            background-image: url('home_page.jpg');
+            min-height: 100%;
+        }
+        ul {
+  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+        li {
+float: right;
+font-size: larger;
+}
+        li a {
+margin-top: 0;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+ }
+        li a:hover:not(.active) {
+ background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+        .description {
+    background-color: rgba(0, 162, 255, 0.534); 
+    color:black; 
+    width:60% ;
+    position: absolute; 
+    bottom:25%;
+    margin-left:25px ;
+}
+p{
+    font-size: 25px;
+}
+@media screen and (max-width: 750px){
+    li{
+        float: none;
+        width:100%;
+    }
+    .description{
+        width:100%;
+        margin: 0px;
+          }
+     p{
+        font-size: 20px;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li style="float: left"><a class="active" href="HomePage.html">Home</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="gallery.html">My Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="description">
+              <p >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa velit, iaculis vitae interdum a,
+                 viverra et mi. Pellentesque ligula diam, pretium a venenatis nec, efficitur et leo. Ut non porta justo, ac lobortis dui. 
+                 Curabitur tristique mauris tortor, tempor scelerisque diam euismod sit amet. Cras accumsan diam dui, in sollicitudin enim semper vitae.
+                  Vestibulum vel felis non dolor pulvinar vestibulum vitae vitae metus. 
+                  Duis efficitur odio eget erat tincidunt mollis. Nulla nec metus erat. Aenean sapien enim, efficitur at felis in, 
+                  pretium lobortis sapien. Nulla gravida eros malesuada tortor tincidunt, sagittis suscipit nibh volutpat. 
+                  Sed porta tellus eu ante molestie commodo. Phasellus accumsan dignissim erat sed dictum. Morbi et molestie ex. 
+                  Vestibulum scelerisque finibus dapibus. Integer at arcu vitae orci aliquet ultricies. Fusce sed elit ac justo tristique bibendum.
+
+             </p>
+        </div>
+    
+    </body>
+</html>
